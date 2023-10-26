@@ -6,7 +6,7 @@ const option = document.querySelectorAll("option");
 inputbtn.addEventListener("click", () => {
     option.forEach((op) => {
         if (colorSelect.value === op.textContent) {
-            colorSelect.removeChild(op);
+            op.remove();
         }
     });
 });
